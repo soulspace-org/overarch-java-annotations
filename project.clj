@@ -3,4 +3,6 @@
   ;:source-paths ["src/main/clojure"]
   ;:resource-paths ["resources"]
   :java-source-paths ["src/main/java"]
+  :java-resource-paths ["src/main/resources"]
+  :java-test-paths ["src/test/java"]
   )
