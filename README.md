@@ -1,7 +1,7 @@
 # Overarch Java Annotations
 Annotate your java source code with Overarch Java Annotations to generate Overarch models for your java projects.
 
-*draft*
+*draft - alpha*
 
 ![GitHub](https://img.shields.io/github/license/soulspace-org/overarch-java-annotations)
 

@@ -8,15 +8,31 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Target({ElementType.TYPE, ElementType.PACKAGE})
+/**
+ * An annotation to declare an Overarch model node for a Java element.
+ */
+@Target({ElementType.TYPE, ElementType.PACKAGE, ElementType.FIELD, ElementType.METHOD})
 @Retention(RetentionPolicy.SOURCE)
 // @Inherited
 // @Repeatable
 @Documented
 public @interface OverarchNode {
-    String el() default "container";
+
+    /** The element type of the overarch model node. */
+    String el() default "component";
+
+    /** The id of the overarch model node. */
     String id() default "";
+
+    /** The name of the overarch model node. */
     String name() default "";
+
+    /** The description of the overarch model node. */
     String desc() default "";
+
+    /** The technology of the overarch model node. */
     String tech() default "";
+
+    /** An EDN map with additional attribute values for the overarch model node. */
+    String edn() default "";
 }

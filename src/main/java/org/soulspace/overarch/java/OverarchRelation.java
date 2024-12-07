@@ -8,18 +8,37 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
+/**
+ * An annotation to declare an Overarch model relation for a Java element.
+ */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.SOURCE)
 // @Inherited
 // @Repeatable
 @Documented
 public @interface OverarchRelation {
+
+    /** The element type of the overarch model relation. */
     String el() default "request";
+
+    /** The id of the overarch model relation. */
     String id() default "";
+
+    /** The id of the referring node of the overarch model relation. */
     String from() default "";
+
+    /** The id of the referred node of the overarch model relation. */
     String to() default "";
+
+    /** The name of the overarch model relation. */
     String name() default "";
+    
+    /** The description of the overarch model relation. */
     String desc() default "";
+
+    /** The technology of the overarch model relation. */
     String tech() default "";
 
+    /** An EDN map with additional attribute value sof the overarch model relation. */
+    String edn() default "";
 }
