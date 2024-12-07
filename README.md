@@ -3,7 +3,7 @@ Annotate your java source code with Overarch Java Annotations to generate Overar
 
 *draft - alpha*
 
-[![Clojars Project](https://img.shields.io/clojars/v/org.soulspace.clj/overarch-java-annotations.svg)](https://clojars.org/org.soulspace.clj/overarch-java-annotations)
+[![Clojars Project](https://img.shields.io/clojars/v/org.soulspace/overarch-java-annotations.svg)](https://clojars.org/org.soulspace/overarch-java-annotations)
 ![GitHub](https://img.shields.io/github/license/soulspace-org/overarch-java-annotations)
 
 ## Build
