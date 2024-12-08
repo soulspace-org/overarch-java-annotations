@@ -22,6 +22,8 @@ On compilation, the annotation processor processes the annotated source files
 and generates a `model.edn` file containing the set of model elements derived
 from the sources.
 
+
+
 ## Example
 
 Create a component model element by annotating a package in the `package-info.java` file:

@@ -19,7 +19,7 @@ import java.lang.annotation.Target;
 public @interface OverarchRelation {
 
     /** The element type of the overarch model relation. */
-    String el() default "request";
+    String el() default "";
 
     /** The id of the overarch model relation. */
     String id() default "";

@@ -19,7 +19,7 @@ import java.lang.annotation.Target;
 public @interface OverarchNode {
 
     /** The element type of the overarch model node. */
-    String el() default "component";
+    String el() default "";
 
     /** The id of the overarch model node. */
     String id() default "";
