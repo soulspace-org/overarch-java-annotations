@@ -39,6 +39,9 @@ public @interface OverarchRelation {
     /** The technology of the overarch model relation. */
     String tech() default "";
 
+    /** The tags of the overarch model relation. */
+    String[] tags() default "";
+
     /** An EDN map with additional attribute value sof the overarch model relation. */
     String edn() default "";
 }
