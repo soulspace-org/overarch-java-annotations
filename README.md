@@ -15,6 +15,14 @@ lein install
 ```
 
 ## Usage
+Add the clojars repo to your build, e.g for maven by adding this repository to the repositories in your `pom.xml`.
+```xml
+<repository>
+  <id>clojars.org</id>
+  <url>https://repo.clojars.org</url>
+</repository>
+```
+
 Add the `overarch-java` and `overarch-java-annotations` dependencies to your project
 and annotate your java sources with the overarch annotations.
 
@@ -22,9 +30,8 @@ On compilation, the annotation processor processes the annotated source files
 and generates a `model.edn` file containing the set of model elements derived
 from the sources.
 
-
-
 ## Example
+Please take a look at the [Example Project](https://github.com/soulspace-org/overarch-java-example).
 
 Create a component model element by annotating a package in the `package-info.java` file:
 ```java
