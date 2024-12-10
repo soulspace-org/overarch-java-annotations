@@ -34,7 +34,7 @@ public @interface OverarchNode {
     String tech() default "";
 
     /** The tags of the overarch model node. */
-    String[] tags() default "";
+    String[] tags() default {};
 
     /** An EDN map with additional attribute values for the overarch model node. */
     String edn() default "";

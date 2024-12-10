@@ -40,7 +40,7 @@ public @interface OverarchRelation {
     String tech() default "";
 
     /** The tags of the overarch model relation. */
-    String[] tags() default "";
+    String[] tags() default {};
 
     /** An EDN map with additional attribute value sof the overarch model relation. */
     String edn() default "";
